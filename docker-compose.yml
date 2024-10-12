@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    image: monitoramento-ambiental:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DatabaseConnection=Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521)))(CONNECT_DATA=(SID=orcl)));Persist Security Info=True;User ID=RM551317;Password=120105;Pooling=True;Connection Timeout=60;
