@@ -5,8 +5,9 @@ name: .NET Pipelines
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -26,14 +27,14 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --no-restore
 
     - name: Test
       run: dotnet test --no-build --verbosity normal
 
-    - name: Build Docker Image
-      run : |
-          docker build -t monitoramento-ambiental:latest .
+    # - name: Build Docker Image
+    #   run : |
+    #       docker build -t monitoramento-ambiental:latest .
 
 # Preciso adicionar os deploys, e o Push da Imagem do Docker
 
