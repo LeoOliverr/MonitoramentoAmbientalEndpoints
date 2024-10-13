@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Clean cache
-    - run: dotnet nuget locals all --clear
+      run: dotnet nuget locals all --clear
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
