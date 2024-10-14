@@ -30,7 +30,7 @@ namespace MonitoramentoAmbientalEndpoints.Tests
             loginResponse.EnsureSucessStatusCode();
 
             var loginResult = await loginResponse.Content.ReadAsAsync<dynamic>();
-            string token = loginResult.Token
+            string token = loginResult.Token;
 
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
