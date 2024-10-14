@@ -56,7 +56,7 @@ jobs:
           docker tag ${{ secrets.DOCKER_HUB_USERNAME }}/monitoramento-ambiental:latest ${{ secrets.DOCKER_HUB_USERNAME }}/monitoramento-ambiental:staging
       - name: Push Docker Image (Staging)
         run: |
-          docker push leonardo1317/monitoramento-ambiental:staging  
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/monitoramento-ambiental:latest  
       - name: Deploy to Staging
         run: |
           docker run -d -p 8080:8080 --name monitoramento-ambiental-contain-staging ${{ secrets.DOCKER_HUB_USERNAME }}/monitoramento-ambiental:staging
