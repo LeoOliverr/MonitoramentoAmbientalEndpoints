@@ -6,6 +6,8 @@ using Moq;
 using AutoMapper;
 using Xunit;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace MonitoramentoAmbientalEndpoints.Tests
 {
@@ -24,7 +26,7 @@ namespace MonitoramentoAmbientalEndpoints.Tests
         }
 
         [Fact]
-        public void Get_ReturnsHttpStatusCode200() {
+        public async Task Get_ReturnsHttpStatusCode200() {
 
             var loginResponse = await _client.PostAsJsonAsync("api/auth/login", new UserModel {UserName = "Marcela", Password = "5678"});
             loginResponse.EnsureSucessStatusCode();
