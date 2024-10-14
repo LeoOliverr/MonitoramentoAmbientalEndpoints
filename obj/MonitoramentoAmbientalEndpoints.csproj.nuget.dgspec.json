@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Usuarios\\Jotape\\Downloads\\MonitoramentoAmbientalEndpoints\\MonitoramentoAmbientalEndpoints.csproj": {}
+    "C:\\Users\\Leo\\Documents\\Fiap\\Fase 6 - Atividade cap 6\\MonitoramentoAmbientalEndpoints-main\\MonitoramentoAmbientalEndpoints.csproj": {}
   },
   "projects": {
-    "Z:\\Usuarios\\Jotape\\Downloads\\MonitoramentoAmbientalEndpoints\\MonitoramentoAmbientalEndpoints.csproj": {
+    "C:\\Users\\Leo\\Documents\\Fiap\\Fase 6 - Atividade cap 6\\MonitoramentoAmbientalEndpoints-main\\MonitoramentoAmbientalEndpoints.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Usuarios\\Jotape\\Downloads\\MonitoramentoAmbientalEndpoints\\MonitoramentoAmbientalEndpoints.csproj",
+        "projectUniqueName": "C:\\Users\\Leo\\Documents\\Fiap\\Fase 6 - Atividade cap 6\\MonitoramentoAmbientalEndpoints-main\\MonitoramentoAmbientalEndpoints.csproj",
         "projectName": "MonitoramentoAmbientalEndpoints",
-        "projectPath": "Z:\\Usuarios\\Jotape\\Downloads\\MonitoramentoAmbientalEndpoints\\MonitoramentoAmbientalEndpoints.csproj",
-        "packagesPath": "C:\\Users\\jolun\\.nuget\\packages\\",
-        "outputPath": "Z:\\Usuarios\\Jotape\\Downloads\\MonitoramentoAmbientalEndpoints\\obj\\",
+        "projectPath": "C:\\Users\\Leo\\Documents\\Fiap\\Fase 6 - Atividade cap 6\\MonitoramentoAmbientalEndpoints-main\\MonitoramentoAmbientalEndpoints.csproj",
+        "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leo\\Documents\\Fiap\\Fase 6 - Atividade cap 6\\MonitoramentoAmbientalEndpoints-main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jolun\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +47,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -70,6 +71,14 @@
               "target": "Package",
               "version": "[8.0.6, )"
             },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.0, )"
+            },
+            "Microsoft.TestPlatform": {
+              "target": "Package",
+              "version": "[17.11.1, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.20.1, )"
@@ -77,6 +86,10 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.70, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
@@ -93,6 +106,10 @@
             "xunit": {
               "target": "Package",
               "version": "[2.8.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [

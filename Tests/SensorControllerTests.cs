@@ -29,7 +29,7 @@ namespace MonitoramentoAmbientalEndpoints.Tests
         public async Task Get_ReturnsHttpStatusCode200() {
 
             var loginResponse = await _client.PostAsJsonAsync("api/auth/login", new UserModel {UserName = "Marcela", Password = "5678"});
-            loginResponse.EnsureSucessStatusCode();
+            loginResponse.EnsureSuccessStatusCode();
 
             var loginResult = await loginResponse.Content.ReadAsAsync<dynamic>();
             string token = loginResult.Token;
