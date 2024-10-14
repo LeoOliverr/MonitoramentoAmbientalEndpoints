@@ -47,9 +47,9 @@ jobs:
       
       - name: Remove Existing Container
         run: |
-        docker stop monitoramento-ambiental-contain-staging || true
-        docker rm monitoramento-ambiental-contain-staging || true
-        
+          docker stop monitoramento-ambiental-contain-staging || true
+          docker rm monitoramento-ambiental-contain-staging || true
+
       - name: Build Docker Image (Staging)
         run: |
           docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/monitoramento-ambiental:latest .
