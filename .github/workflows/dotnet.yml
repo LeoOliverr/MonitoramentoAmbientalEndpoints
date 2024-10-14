@@ -61,7 +61,7 @@ jobs:
 
       - name: Deploy to Production
         run: |
-          docker build -t monitoramento-ambiental:production .
+          docker build -t monitoramento-ambiental:prod .
           docker run -d -p 8080:8080 --name monitoramento-ambiental-contain-production monitoramento-ambiental:prod
 
       - name: Set Production URL
