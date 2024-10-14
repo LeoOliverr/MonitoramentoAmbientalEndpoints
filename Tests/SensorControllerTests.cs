@@ -11,6 +11,7 @@ namespace MonitoramentoAmbientalEndpoints.Tests
 {
     public class SensorControllerTests
     {
+        private readonly HttpClient _client;
         private readonly Mock<ISensorService> _sensorServiceMock;
         private readonly Mock<IMapper> _mapperMock;
         private readonly SensorController _controller;
@@ -19,10 +20,22 @@ namespace MonitoramentoAmbientalEndpoints.Tests
             _sensorServiceMock = new Mock<ISensorService>();
             _mapperMock = new Mock<IMapper>();
             _controller = new SensorController(_sensorServiceMock.Object, _mapperMock.Object);
+            _client = new HttpClient { BaseAddress = new Uri("http://localhost:8080/") };
         }
 
         [Fact]
         public void Get_ReturnsHttpStatusCode200() {
+
+            var loginResponse = await _client.PostAsJsonAsync("api/auth/login", new UserModel {UserName = "Marcela", Password = "5678"});
+            loginResponse.EnsureSucessStatusCode();
+
+            var loginResult = await loginResponse.Content.ReadAsAsync<dynamic>();
+            string token = loginResult.Token
+
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            var response = await _client.GetAsync("api/sensor");
+            response.EnsureSuccessStatusCode();
             // Arrange
             var sensors = new List<SensorModel> { new SensorModel { Id = 1, Nome = "SensorTeste1", Localizacao = "Quintal", Temperatura = "24", Umidade = "56"}};
             var sensorViewModels = new List<SensorViewModel> { new SensorViewModel { Id = 1, Nome = "SensorTeste1", Localizacao = "Quintal", Temperatura = "24", Umidade = "56" } };
