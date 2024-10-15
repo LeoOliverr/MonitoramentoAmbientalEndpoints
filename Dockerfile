@@ -15,6 +15,10 @@ COPY . .
 WORKDIR "/src/."
 RUN dotnet build "./MonitoramentoAmbientalEndpoints.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
+FROM build AS test
+WORKDIR /src
+RUN dotnet test "./Tests/SensorControllerTests.cs" --no-build --verbosity normal
+
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./MonitoramentoAmbientalEndpoints.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
