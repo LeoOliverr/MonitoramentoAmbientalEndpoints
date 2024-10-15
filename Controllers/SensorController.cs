@@ -24,7 +24,7 @@ namespace MonitoramentoAmbientalEndpoints.Controllers
 
         [HttpGet]
         [Authorize(Roles = "operador, gerente")]
-        public ActionResult<IEnumerable<SensorPaginacaoViewModel>> Get([FromQuery] int page = 1, [FromQuery] int pageSize = 10) {
+        public ActionResult<SensorPaginacaoViewModel> Get([FromQuery] int page = 1, [FromQuery] int pageSize = 10) {
             var sensores = _sensorService.ListarSensores(page, pageSize);
             var viewModelList = _mapper.Map<IEnumerable<SensorViewModel>>(sensores);
 
@@ -36,13 +36,7 @@ namespace MonitoramentoAmbientalEndpoints.Controllers
             };
             return Ok(viewModel);
         }
-        //public IEnumerable<SensorViewModel> Get() {
-        //    var sensores = _sensorService.ListarSensores();
-        //    var viewModelList = _mapper.Map<IEnumerable<SensorViewModel>>(sensores);
-
-        //    return viewModelList;
-        //}
-
+        
         [HttpGet("{id}")]
         [Authorize(Roles = "operador, gerente")]
         public ActionResult<SensorViewModel> Get(int id) {
