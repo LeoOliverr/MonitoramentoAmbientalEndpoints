@@ -641,3 +641,11 @@ C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpo
 C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\obj\Debug\net8.0\MonitoramentoAmbientalEndpoints.pdb
 C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\obj\Debug\net8.0\MonitoramentoAmbientalEndpoints.genruntimeconfig.cache
 C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\obj\Debug\net8.0\ref\MonitoramentoAmbientalEndpoints.dll
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\Tests\BDD\Schemas\SensorSchema.json
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\BoDi.dll
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\Gherkin.dll
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\Newtonsoft.Json.Schema.dll
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\TechTalk.SpecFlow.dll
+C:\Users\Leo\Documents\Fiap\Fase 6 - Atividade cap 6\MonitoramentoAmbientalEndpoints-main\bin\Debug\net8.0\SpecFlow.Internal.Json.dll
