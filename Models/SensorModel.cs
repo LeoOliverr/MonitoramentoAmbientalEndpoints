@@ -9,9 +9,9 @@ namespace MonitoramentoAmbientalEndpoints.Models
     public class SensorModel
     {
         [Key]
-        public int? Id { get; set; }
+        public int Id { get; set; }
         [Required]
-        public string? Nome { get; set; }
+        public string Nome { get; set; }
         [Required]
         public string Localizacao { get; set; }
         public string Temperatura { get; set; }
