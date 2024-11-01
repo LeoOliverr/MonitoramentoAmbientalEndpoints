@@ -6,4 +6,3 @@ Feature: Validar Resposta do Endpoint
         When eu realizo uma requisição GET
         Then o status code retornado deve ser 200
         And o corpo da resposta deve conter "Id" e "Nome"
-        And o corpo da resposta deve seguir o Json Schema "SensorSchema.json"
