@@ -20,22 +20,22 @@ namespace MonitoramentoAmbientalEndpoints.Tests.BDD.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Validar conteúdo Json")]
-    public partial class ValidarConteudoJsonFeature
+    [NUnit.Framework.DescriptionAttribute("Validar Estrutura do Corpo da Resposta")]
+    public partial class ValidarEstruturaDoCorpoDaRespostaFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "BodyJson.feature"
+#line 1 "ValidarEstruturaJson.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/BDD/Features", "Validar conteúdo Json", "    Verificar se o corpo da resposta Json contém os dados esperados.", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/BDD/Features", "Validar Estrutura do Corpo da Resposta", "    Verificar a estrutura da resposta JSON.", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,14 +74,12 @@ namespace MonitoramentoAmbientalEndpoints.Tests.BDD.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validar a resposta do endpoint \"api/sensor\" para garantir que contém dados corret" +
-            "os")]
-        public void ValidarARespostaDoEndpointApiSensorParaGarantirQueContemDadosCorretos()
+        [NUnit.Framework.DescriptionAttribute("Validar que o corpo da resposta do endpoint \"api/sensor\" não segue o Json Schema")]
+        public void ValidarQueOCorpoDaRespostaDoEndpointApiSensorNaoSegueOJsonSchema()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validar a resposta do endpoint \"api/sensor\" para garantir que contém dados corret" +
-                    "os", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validar que o corpo da resposta do endpoint \"api/sensor\" não segue o Json Schema", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -96,10 +94,11 @@ namespace MonitoramentoAmbientalEndpoints.Tests.BDD.Features
         testRunner.Given("que o endpoint \"api/sensor\" está disponível", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
-        testRunner.When("eu faço uma requisição GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+        testRunner.When("eu realizo uma requisição GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
-        testRunner.Then("o corpo da resposta deve conter \"Id\" e \"Nome\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+        testRunner.Then("o corpo da resposta deve seguir o Json Schema \"SensorSchemaInvalid.json\" (ou o qu" +
+                        "e você quiser chamar)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

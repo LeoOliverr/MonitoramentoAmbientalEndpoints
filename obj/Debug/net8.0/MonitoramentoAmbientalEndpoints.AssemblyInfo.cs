@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonitoramentoAmbientalEndpoints")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9f72b184e417264ef180971ec181ef9622c8096")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee5e704950f64c751c086013d6206963cddc8df0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonitoramentoAmbientalEndpoints")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonitoramentoAmbientalEndpoints")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

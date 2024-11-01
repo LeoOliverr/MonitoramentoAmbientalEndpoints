@@ -23,9 +23,12 @@ jobs:
       - name: Install Docker Compose
         run: sudo apt-get update && sudo apt-get install -y docker-compose
 
-      - name: Build and Test with Docker Compose
+      - name: Build with Docker Compose
         run: |
-          docker-compose up --build --abort-on-container-exit tests
+          docker-compose build
+
+      - name: Run Tests
+        run: docker-compose run tests
 
       - name: Cleanup
         run: docker-compose down

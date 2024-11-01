@@ -20,23 +20,22 @@ namespace MonitoramentoAmbientalEndpoints.Tests.BDD.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Validar Status Code")]
-    public partial class ValidarStatusCodeFeature
+    [NUnit.Framework.DescriptionAttribute("Validar Endpoint Indisponível")]
+    public partial class ValidarEndpointIndisponivelFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "StatusCode.feature"
+#line 1 "ValidarEndpointIndisponivel.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/BDD/Features", "Validar Status Code", "    Ao realizar uma requisição de consulta dentro da API, verificar se ela retorn" +
-                    "a o status code 200.", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/BDD/Features", "Validar Endpoint Indisponível", "    Verificar a resposta da API quando um endpoint não está disponível.", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,12 +74,12 @@ namespace MonitoramentoAmbientalEndpoints.Tests.BDD.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validar que o endpoint de consulta retorne status 200 OK")]
-        public void ValidarQueOEndpointDeConsultaRetorneStatus200OK()
+        [NUnit.Framework.DescriptionAttribute("Validar que o endpoint \"api/sensors\" está indisponível")]
+        public void ValidarQueOEndpointApiSensorsEstaIndisponivel()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validar que o endpoint de consulta retorne status 200 OK", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validar que o endpoint \"api/sensors\" está indisponível", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -92,13 +91,13 @@ namespace MonitoramentoAmbientalEndpoints.Tests.BDD.Features
             {
                 this.ScenarioStart();
 #line 5
-        testRunner.Given("que o endpoint \"api/sensor\" está disponível", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+        testRunner.Given("que o endpoint \"api/sensors\" está indisponível", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
         testRunner.When("eu realizo uma requisição GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
-        testRunner.Then("o status code retornado deve ser 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+        testRunner.Then("o status code retornado deve ser 404", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
