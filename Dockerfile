@@ -17,7 +17,7 @@ RUN dotnet build "./MonitoramentoAmbientalEndpoints.csproj" -c $BUILD_CONFIGURAT
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS test
 WORKDIR /src
-COPY . .
+COPY . . 
 RUN dotnet test "./MonitoramentoAmbientalEndpoints.csproj" --no-build --verbosity normal
 
 FROM build AS publish
