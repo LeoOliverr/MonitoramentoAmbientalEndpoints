@@ -47,13 +47,21 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.1, )"
+            },
+            "JsonSchema.Net": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.AspNetCore.Mvc.Testing": {
               "target": "Package",
@@ -61,23 +69,23 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.11.0, )"
+              "version": "[17.11.1, )"
             },
             "Microsoft.TestPlatform": {
               "target": "Package",
@@ -91,6 +99,10 @@
               "target": "Package",
               "version": "[4.20.70, )"
             },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -101,11 +113,11 @@
             },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.23.40, )"
+              "version": "[8.23.60, )"
             },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
-              "version": "[23.4.0, )"
+              "version": "[23.6.0, )"
             },
             "SpecFlow": {
               "target": "Package",
@@ -115,21 +127,17 @@
               "target": "Package",
               "version": "[3.9.74, )"
             },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.9.57, )"
+            },
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
               "version": "[3.9.74, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.8.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[6.9.0, )"
             }
           },
           "imports": [

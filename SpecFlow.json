@@ -1,0 +1,10 @@
+{
+    "testRunner": "NUnit",
+    "unitTestProvider": {
+      "name": "NUnit"
+    },
+    "generator": {
+      "allowDebugGeneratedFiles": true,
+      "generateAsyncTests": true
+    }
+  }
