@@ -28,7 +28,7 @@ jobs:
           docker-compose build
 
       - name: Run Tests
-        run: docker-compose run tests
+        run: docker-compose up --abort-on-container-exit --exit-code-from tests
 
       - name: Cleanup
         run: docker-compose down

@@ -15,6 +15,9 @@ services:
       context: .
       dockerfile: Dockerfile
       target: test
+    depends_on:
+      - app 
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DatabaseConnection: Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521)))(CONNECT_DATA=(SID=orcl)));Persist Security Info=True;User ID=RM551317;Password=120105;Pooling=True;Connection Timeout=60;
     command: ["dotnet", "test", "--no-build", "--verbosity", "normal"]
