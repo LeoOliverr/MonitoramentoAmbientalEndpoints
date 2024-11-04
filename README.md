@@ -21,4 +21,4 @@ Antes de iniciar, certifique-se de que possui os seguintes itens instalados:
 
 1. Clone o repositório para sua máquina local:
    ```bash
-   git clone https://github.com/seu_usuario/nome_do_repositorio.git
+   git clone https://github.com/LeoOliverr/MonitoramentoAmbientalEndpoints.git
