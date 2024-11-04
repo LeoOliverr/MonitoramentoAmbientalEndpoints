@@ -14,8 +14,8 @@ Antes de iniciar, certifique-se de que possui os seguintes itens instalados:
 ## Estrutura do Projeto
 
 - *Features*: Contém os arquivos .feature escritos em Gherkin, que descrevem os cenários de teste.
-- *Schemas*: Inclui o arquivo SensorSchema.json, que define o contrato JSON a ser validado.
-- *Steps*: Contém as implementações dos passos dos testes (SensorSteps.cs) associadas aos cenários descritos em Gherkin.
+- *Schemas*: Inclui o arquivo authSchema.json, que define o contrato JSON a ser validado.
+- *Steps*: Contém as implementações dos passos dos testes (AuthSteps.cs) associadas aos cenários descritos em Gherkin.
 
 ## Configuração
 
